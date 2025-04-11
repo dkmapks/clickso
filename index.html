@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicker Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Clicker Game</h1>
+    <button id="clickButton">Click Me!</button>
+    <p>Money: <span id="money">0</span></p>
+    <p>Rank: <span id="rank">Newbie</span></p>
+
+    <h2>Shop</h2>
+    <div id="shop">
+      <button class="upgrade" data-cost="10" data-boost="1">Upgrade (10 money)</button>
+      <button class="upgrade" data-cost="50" data-boost="5">Super Upgrade (50 money)</button>
+    </div>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+
+    <h2>Save/Load</h2>
+    <button id="saveButton">Save Game</button>
+    <button id="loadButton">Load Game</button>
+  </div>
+
+  <div id="modMenu" style="display: none;">
+    <h2>Mod Menu</h2>
+    <button id="addMoney">Add 1000 Money</button>
+    <button id="addRank">Upgrade Rank</button>
+    <p>Enter Code: <input type="password" id="modCode"><button id="unlockMod">Unlock Mod Menu</button></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
